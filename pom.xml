@@ -8,7 +8,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
     </parent>
-    <groupId>xyz.wenjiesx</groupId>
+    <groupId>io.github.sunwenjieIT</groupId>
     <artifactId>spring-boot-webmvc-version-mapping</artifactId>
     <version>2.0.5</version>
     <packaging>pom</packaging>
