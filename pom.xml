@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.sunwenjieIT</groupId>
     <artifactId>spring-boot-webmvc-version-mapping</artifactId>
-    <version>2.0.5</version>
+    <version>1.0.2.001-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -65,7 +65,7 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <autoReleaseAfterClose>false</autoReleaseAfterClose>
                 </configuration>
             </plugin>
             <plugin>
