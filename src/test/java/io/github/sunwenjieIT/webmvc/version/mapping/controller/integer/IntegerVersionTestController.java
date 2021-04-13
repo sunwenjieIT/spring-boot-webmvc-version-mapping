@@ -38,4 +38,10 @@ public class IntegerVersionTestController {
 
         return "method4";
     }
+
+    @PostMapping(value = "/api1")
+    public String method5() {
+
+        return "method5";
+    }
 }

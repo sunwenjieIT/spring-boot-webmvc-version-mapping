@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.sunwenjieIT</groupId>
     <artifactId>spring-boot-webmvc-version-mapping</artifactId>
-    <version>1.0.2.001-SNAPSHOT</version>
+    <version>1.0.2.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>

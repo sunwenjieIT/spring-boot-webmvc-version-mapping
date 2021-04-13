@@ -47,12 +47,18 @@ public class IntegerVersionTest {
         Assert.assertEquals("method3", restTemplate.postForObject(host + "/test/api1", buildHttpEntity("20"), String.class));
         System.out.println("version 24 test");
         Assert.assertEquals("method4", restTemplate.postForObject(host + "/test/api1", buildHttpEntity("24"), String.class));
+        System.out.println("version 30 test");
+        Assert.assertEquals("method5", restTemplate.postForObject(host + "/test/api1", buildHttpEntity("30"), String.class));
+        System.out.println("no version header test");
+        Assert.assertEquals("method5", restTemplate.postForObject(host + "/test/api1",buildHttpEntity(null), String.class));
 
     }
 
     public HttpEntity buildHttpEntity(String version) {
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.add("clientVersion", version);
+        if (version != null)
+            httpHeaders.add("clientVersion", version);
+
         HttpEntity httpEntity = new HttpEntity(httpHeaders);
         return httpEntity;
     }
