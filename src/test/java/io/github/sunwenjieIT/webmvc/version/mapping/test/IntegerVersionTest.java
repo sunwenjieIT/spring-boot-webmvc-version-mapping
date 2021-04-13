@@ -45,6 +45,8 @@ public class IntegerVersionTest {
         Assert.assertEquals("method2", restTemplate.postForObject(host + "/test/api1", buildHttpEntity("14"), String.class));
         System.out.println("version 20 test");
         Assert.assertEquals("method3", restTemplate.postForObject(host + "/test/api1", buildHttpEntity("20"), String.class));
+        System.out.println("version 24 test");
+        Assert.assertEquals("method4", restTemplate.postForObject(host + "/test/api1", buildHttpEntity("24"), String.class));
 
     }
 

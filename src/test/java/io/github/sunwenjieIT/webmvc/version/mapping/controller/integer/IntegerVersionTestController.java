@@ -1,6 +1,8 @@
 package io.github.sunwenjieIT.webmvc.version.mapping.controller.integer;
 
+import io.github.sunwenjieIT.webmvc.version.mapping.annotation.ClientVersion;
 import io.github.sunwenjieIT.webmvc.version.mapping.annotation.PostMappingWithVersion;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,5 +30,12 @@ public class IntegerVersionTestController {
     public String method3() {
 
         return "method3";
+    }
+
+    @PostMapping(value = "/api1")
+    @ClientVersion(minVersion = "21", maxVersion = "25")
+    public String method4() {
+
+        return "method4";
     }
 }
