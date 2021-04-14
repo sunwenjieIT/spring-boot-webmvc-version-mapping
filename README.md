@@ -39,7 +39,6 @@ minVersion, maxVersion的默认值为`"-1"`, order的默认值为`-1`
 
 ```java
     @PostMappingWithVersion(value = "/yourMethodPath", minVersion = "21", maxVersion = "25")
-    @ClientVersion(minVersion = "21", maxVersion = "25")
     public String yourMethod2() {
         ...
     }
