@@ -15,7 +15,7 @@
     <dependency>
         <groupId>io.github.sunwenjieIT</groupId>
         <artifactId>spring-boot-webmvc-version-mapping</artifactId>
-        <version>1.0.2.1-SNAPSHOT</version>
+        <version>1.0.2-RELEASE</version>
     </dependency>
 
 **2.启用功能**  
